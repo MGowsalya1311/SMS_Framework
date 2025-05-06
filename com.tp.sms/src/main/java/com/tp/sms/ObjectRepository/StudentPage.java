@@ -1,5 +1,6 @@
 package com.tp.sms.ObjectRepository;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -248,6 +249,7 @@ public class StudentPage {
 		String std_email = std_fullname + jLib.getRandomNumber() + "@gmail.com";
 				
 		String std_phone = eLib.getDataFromExcelFile(sheetName, rowNum, 7);
+
 		String std_dob = eLib.getDataFromExcelFile(sheetName, rowNum, 8);
 		String std_gender = eLib.getDataFromExcelFile(sheetName, rowNum, 9);
 		String gua_fullname = eLib.getDataFromExcelFile(sheetName, rowNum, 10);
@@ -271,7 +273,15 @@ public class StudentPage {
 		getStdPhone_Edt().sendKeys(std_phone);
 		getStdDOB_Edt().sendKeys(std_dob);
 		getStdGender_dropdown().sendKeys(std_gender);
-		getStdChoosePhoto_Btn().sendKeys("./com.tp.sms/resources/student.jpg");
+		File file = new File("src/test/resources/student.jpg");
+		
+		System.out.println("Image path: " + file.getAbsolutePath());
+		System.out.println("Exists: " + file.exists());
+
+		getStdChoosePhoto_Btn().sendKeys(file.getAbsolutePath());
+		
+	
+		//getStdChoosePhoto_Btn().sendKeys("com.tp.sms/resources/student.jpg");
 		
 		//guardian details
 		getGuardianFullname_Edt().sendKeys(gua_fullname);
@@ -281,6 +291,9 @@ public class StudentPage {
 		getGuardianPhone_Edt().sendKeys(gua_phone);
 		getGuardianDOB_Edt().sendKeys(gua_dob);
 		getGuardianGender_dropdown().sendKeys(gua_gender);
+		//File file1 = new File("src/test/resources/teacher.jpg");
+		//getGuardianChoosePhoto_Btn().sendKeys(file1.getAbsolutePath());
+
 		getGuardianChoosePhoto_Btn().sendKeys("./com.tp.sms/resources/teacher.jpg");
 		
 		wLib.toScrollIntoView(driver, getNext_btn());

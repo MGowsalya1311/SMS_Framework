@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tp.sms.AdminTest">
+      <class name="com.tp.sms.StudentTest">
         <methods>
-          <include name="verifyAdminProfileTest"/>
           <include name="toLogout"/>
           <include name="toLaunch"/>
+          <include name="createStudentTest"/>
           <include name="toClose"/>
         </methods>
-      </class> <!-- com.tp.sms.AdminTest -->
+      </class> <!-- com.tp.sms.StudentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
