@@ -271,7 +271,7 @@ public class StudentPage {
 		getStdPhone_Edt().sendKeys(std_phone);
 		getStdDOB_Edt().sendKeys(std_dob);
 		getStdGender_dropdown().sendKeys(std_gender);
-		getStdChoosePhoto_Btn().sendKeys("C:\\Users\\mailm\\OneDrive\\Desktop\\Java\\Eclipse_Projects1\\com.tp.sms\\resources\\student.jpg");
+		getStdChoosePhoto_Btn().sendKeys("./com.tp.sms/resources/student.jpg");
 		
 		//guardian details
 		getGuardianFullname_Edt().sendKeys(gua_fullname);
@@ -281,7 +281,7 @@ public class StudentPage {
 		getGuardianPhone_Edt().sendKeys(gua_phone);
 		getGuardianDOB_Edt().sendKeys(gua_dob);
 		getGuardianGender_dropdown().sendKeys(gua_gender);
-		getGuardianChoosePhoto_Btn().sendKeys("C:\\Users\\mailm\\OneDrive\\Desktop\\Java\\Eclipse_Projects1\\com.tp.sms\\resources\\teacher.jpg");
+		getGuardianChoosePhoto_Btn().sendKeys("./com.tp.sms/resources/teacher.jpg");
 		
 		wLib.toScrollIntoView(driver, getNext_btn());
 		getNext_btn().click();
