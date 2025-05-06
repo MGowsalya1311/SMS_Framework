@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num attn">3</td><td class="num attn">2</td><td class="num">174,673</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.tp.sms.Std_ClassroomTest</td><td><a href="#m0">toLogout</a></td><td rowspan="1">1745489408891</td><td rowspan="1">25028</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tp.sms.ExamTest</td><td><a href="#m1">createExamTest</a></td><td rowspan="1">1745489289578</td><td rowspan="1">1604</td></tr><tr class="failedodd"><td rowspan="1">com.tp.sms.Std_ClassroomTest</td><td><a href="#m2">createNewClassroomTest</a></td><td rowspan="1">1745489382194</td><td rowspan="1">25921</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.tp.sms.Std_ClassroomTest</td><td><a href="#m3">toClose</a></td><td rowspan="1">1745489433924</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">toLogout</a></td><td rowspan="1">1745489433924</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.tp.sms.ExamTest</td><td><a href="#m5">createExamTest</a></td><td rowspan="2">1745489284721</td><td rowspan="2">2076</td></tr><tr class="skippedeven"><td><a href="#m6">createExamTest</a></td></tr><tr class="skippedodd"><td rowspan="1">com.tp.sms.Std_ClassroomTest</td><td><a href="#m7">editClassroomTest</a></td><td rowspan="1">1745489433924</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tp.sms.AdminTest</td><td><a href="#m8">verifyAdminProfileTest</a></td><td rowspan="1">1745489274568</td><td rowspan="1">3515</td></tr><tr class="passedodd"><td rowspan="1">com.tp.sms.StudentTest</td><td><a href="#m9">createStudentTest</a></td><td rowspan="1">1745489308850</td><td rowspan="1">19686</td></tr><tr class="passedeven"><td rowspan="2">com.tp.sms.SubjectRoutingTest</td><td><a href="#m10">createGradeTest</a></td><td rowspan="1">1745489334533</td><td rowspan="1">16047</td></tr><tr class="passedeven"><td><a href="#m11">verifyGradeInSubjectRoutingTest</a></td><td rowspan="1">1745489350885</td><td rowspan="1">25838</td></tr><tr class="passedodd"><td rowspan="1">com.tp.sms.SubjectTest</td><td><a href="#m12">createSubjectTest</a></td><td rowspan="1">1745489437284</td><td rowspan="1">5741</td></tr><tr class="passedeven"><td rowspan="2">com.tp.sms.TeacherTest</td><td><a href="#m13">testLogin</a></td><td rowspan="1">1745489298117</td><td rowspan="1">1366</td></tr><tr class="passedeven"><td><a href="#m14">viewAttendance</a></td><td rowspan="1">1745489300156</td><td rowspan="1">1826</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.tp.sms.Std_ClassroomTest#toLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;dropdown user user-menu&apos;]&quot;}
+  (Session info: MicrosoftEdge=135.0.3179.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [693c0c2a244df4bdbaf319ab21becf84, findElement {value=//li[@class=&apos;dropdown user user-menu&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56233}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\Users\mailm\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56233/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 693c0c2a244df4bdbaf319ab21becf84
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tp.sms.ObjectRepository.HomePage.signOut(HomePage.java:230)
+	at com.tp.sms.generic.BaseClassTest.BaseClass.toLogout(BaseClass.java:104)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tp.sms.ExamTest#createExamTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: im failing the TestScript
+	at com.tp.sms.ExamTest.createExamTest(ExamTest.java:27)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tp.sms.Std_ClassroomTest#createNewClassroomTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Classroom&apos;]&quot;}
+  (Session info: MicrosoftEdge=135.0.3179.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [693c0c2a244df4bdbaf319ab21becf84, findElement {value=//span[text()=&apos;Classroom&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56233}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\Users\mailm\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56233/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 693c0c2a244df4bdbaf319ab21becf84
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tp.sms.Std_ClassroomTest.createNewClassroomTest(Std_ClassroomTest.java:33)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tp.sms.Std_ClassroomTest#toClose</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tp.sms.Std_ClassroomTest#toLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.tp.sms.ExamTest#createExamTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: im failing the TestScript
+	at com.tp.sms.ExamTest.createExamTest(ExamTest.java:27)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.tp.sms.ExamTest#createExamTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: im failing the TestScript
+	at com.tp.sms.ExamTest.createExamTest(ExamTest.java:27)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.tp.sms.Std_ClassroomTest#editClassroomTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;dropdown user user-menu&apos;]&quot;}
+  (Session info: MicrosoftEdge=135.0.3179.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [693c0c2a244df4bdbaf319ab21becf84, findElement {value=//li[@class=&apos;dropdown user user-menu&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56233}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\Users\mailm\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56233/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 693c0c2a244df4bdbaf319ab21becf84
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tp.sms.ObjectRepository.HomePage.signOut(HomePage.java:230)
+	at com.tp.sms.generic.BaseClassTest.BaseClass.toLogout(BaseClass.java:104)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.tp.sms.AdminTest#verifyAdminProfileTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>My Profile Preview verified<br/>Navigated to Admin profile page successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.tp.sms.StudentTest#createStudentTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Student created successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.tp.sms.SubjectRoutingTest#createGradeTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Grade created successfully<br/>Success! Your information has been successfully inserted in our database. verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.tp.sms.SubjectRoutingTest#verifyGradeInSubjectRoutingTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Grade created successfully<br/>Success! Your information has been successfully inserted in our database. verified<br/>Subject Routing created successfully<br/>Success! Your information has been successfully inserted in our database. verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.tp.sms.SubjectTest#createSubjectTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Subject created successfully<br/>Success! Your information has been successfully inserted in our database. verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.tp.sms.TeacherTest#testLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Teacher 1 ABC is verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.tp.sms.TeacherTest#viewAttendance</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logged in successfully<br/>Teacher 1 ABC is verified<br/>Attendance page is verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
