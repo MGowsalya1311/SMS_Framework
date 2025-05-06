@@ -273,12 +273,12 @@ public class StudentPage {
 		getStdPhone_Edt().sendKeys(std_phone);
 		getStdDOB_Edt().sendKeys(std_dob);
 		getStdGender_dropdown().sendKeys(std_gender);
-		File file = new File("src/test/resources/student.jpg");
+		//File file = new File("src/test/resources/student.jpg");
 		
-		System.out.println("Image path: " + file.getAbsolutePath());
-		System.out.println("Exists: " + file.exists());
+		//System.out.println("Image path: " + file.getAbsolutePath());
+		//System.out.println("Exists: " + file.exists());
 
-		getStdChoosePhoto_Btn().sendKeys(file.getAbsolutePath());
+		getStdChoosePhoto_Btn().sendKeys("C:\\Users\\mailm\\git\\repository4\\com.tp.sms\\resources\\student.jpg");
 		
 	
 		//getStdChoosePhoto_Btn().sendKeys("com.tp.sms/resources/student.jpg");
