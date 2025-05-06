@@ -47,7 +47,7 @@ public class SubjectRoutingTest extends BaseClass {
 		verifyingHeader(hp.getConfMessage_text(),"Success");
 
 		//	Thread.sleep(4000);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.invisibilityOf(hp.getConfMessage_text()));
 
 
@@ -114,7 +114,7 @@ public class SubjectRoutingTest extends BaseClass {
 		Reporter.log("Subject Routing created successfully",true);
 		verifyingHeader(hp.getConfMessage_text(),"Success");
 	//Thread.sleep(4000);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.invisibilityOf(hp.getConfMessage_text()));
 
 
