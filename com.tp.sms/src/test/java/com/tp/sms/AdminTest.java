@@ -13,7 +13,7 @@ import com.tp.sms.generic.FileUtility.FileUtility;
 import com.tp.sms.generic.ListenerUtility.ListenerImplementation;
 
 
-//@Listeners(com.tp.sms.generic.ListenerUtility.ListenerImplementation.class)
+@Listeners(com.tp.sms.generic.ListenerUtility.ListenerImplementation.class)
 public class AdminTest extends BaseClass{
 
 	@Test

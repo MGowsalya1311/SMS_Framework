@@ -24,7 +24,7 @@ public class ExamTest extends BaseClass{
 		hp.getCreateExam_link().click();
 		
 		
-		Assert.fail("im failing the TestScript");
+		//Assert.fail("im failing the TestScript");
 		
 		ExamPage ep = new ExamPage(driver);
 		ep.getAdd_Btn().click();

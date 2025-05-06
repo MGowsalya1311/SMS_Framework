@@ -98,8 +98,9 @@ public class BaseClass {
 	//	}
 
 	@AfterMethod
-	public void toLogout() {
+	public void toLogout() throws InterruptedException {
 
+		Thread.sleep(4000);
 		HomePage hp = new HomePage(driver);
 		hp.signOut();
 		Reporter.log("Logged out Successfully",true);
