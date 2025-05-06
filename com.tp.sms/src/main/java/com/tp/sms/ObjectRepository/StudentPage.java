@@ -8,6 +8,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -273,15 +274,17 @@ public class StudentPage {
 		getStdPhone_Edt().sendKeys(std_phone);
 		getStdDOB_Edt().sendKeys(std_dob);
 		getStdGender_dropdown().sendKeys(std_gender);
-		//File file = new File("src/test/resources/student.jpg");
 		
-		//System.out.println("Image path: " + file.getAbsolutePath());
-		//System.out.println("Exists: " + file.exists());
+		
+		File file = new File("src/test/resources/student.jpg");
+		getStdChoosePhoto_Btn().sendKeys(file.getAbsolutePath());
+		
+		//getStdChoosePhoto_Btn().sendKeys("C:\\Users\\mailm\\git\\repository4\\com.tp.sms\\resources\\student.jpg");
+/*		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].style.display='block';", getStdChoosePhoto_Btn());
 
 		getStdChoosePhoto_Btn().sendKeys("C:\\Users\\mailm\\git\\repository4\\com.tp.sms\\resources\\student.jpg");
-		
-	
-		//getStdChoosePhoto_Btn().sendKeys("com.tp.sms/resources/student.jpg");
+		*/
 		
 		//guardian details
 		getGuardianFullname_Edt().sendKeys(gua_fullname);
@@ -291,10 +294,11 @@ public class StudentPage {
 		getGuardianPhone_Edt().sendKeys(gua_phone);
 		getGuardianDOB_Edt().sendKeys(gua_dob);
 		getGuardianGender_dropdown().sendKeys(gua_gender);
-		//File file1 = new File("src/test/resources/teacher.jpg");
-		//getGuardianChoosePhoto_Btn().sendKeys(file1.getAbsolutePath());
+		File file1 = new File("src/test/resources/teacher.jpg");
+		getGuardianChoosePhoto_Btn().sendKeys(file1.getAbsolutePath());
 
-		getGuardianChoosePhoto_Btn().sendKeys("./com.tp.sms/resources/teacher.jpg");
+		
+		getGuardianChoosePhoto_Btn().sendKeys(file1.getAbsolutePath());
 		
 		wLib.toScrollIntoView(driver, getNext_btn());
 		getNext_btn().click();
