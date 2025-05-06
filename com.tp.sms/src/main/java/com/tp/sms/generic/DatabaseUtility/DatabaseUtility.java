@@ -25,6 +25,8 @@ public class DatabaseUtility {
 	public void closeDBConnection() throws Throwable {
 		conn.close();
 		System.out.println("connection closed");
+
+		//code edited
 	}
 
 }
