@@ -32,9 +32,7 @@ public class StudentTest  extends BaseClass{
 		lp.login(un,pswd);
 
 		HomePage hp = new HomePage(driver);
-		hp.getStudent_link().click();
-		hp.getAddStudent_link().click();
-
+		hp.navigateToAddStudentPage();
 		StudentPage sp = new StudentPage(driver);
 		sp.createStud("student",1);
 
@@ -43,9 +41,7 @@ public class StudentTest  extends BaseClass{
 
 		Thread.sleep(3000);
 		SubjectSelectionPage subSelectPage = new SubjectSelectionPage(driver);
-		subSelectPage.getSubject_checkbox().click();
-		subSelectPage.getSubjectSubmit_Btn().click();
-
+		subSelectPage.selectSubject();
 		Thread.sleep(3000);
 
 		InvoicePage invoicePage = new InvoicePage(driver);

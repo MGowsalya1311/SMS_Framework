@@ -28,6 +28,12 @@ public class SubjectSelectionPage {
 	public WebElement getSubjectSubmit_Btn() {
 		return subjectSubmit_Btn;
 	}
+	
+	public void selectSubject() {
+		getSubject_checkbox().click();
+		getSubjectSubmit_Btn().click();
+
+	}
 
 
 }

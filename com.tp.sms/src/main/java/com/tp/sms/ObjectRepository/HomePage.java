@@ -128,7 +128,6 @@ public class HomePage {
 		return Dashboard_link;
 	}
 
-
 	public WebElement getMyProfile_link() {
 		return MyProfile_link;
 	}
@@ -224,6 +223,11 @@ public class HomePage {
 	}
 
 
+public void navigateToAddStudentPage() {
+	getStudent_link().click();
+	getAddStudent_link().click();
+
+	}
 	public void navigateToCreateExamPage() {
 		getExam_link().click();
 		getCreateExam_link().click();

@@ -90,10 +90,6 @@ public class Std_ClassroomTest extends BaseClass {
 		
 		Thread.sleep(2000);
 		boolean b1 = clsPage.getConfirmation_text().getText().contains("Success");
-//		SoftAssert sa1 = new  SoftAssert();
-//		sa1.assertTrue(b1);
-//		sa1.assertAll();
-
 		Assert.assertTrue(b1);
 	
 	//	System.out.println(editClsPage.getUpdate_Btn().getText());
