@@ -28,6 +28,14 @@ import com.tp.sms.generic.WebDriverUtility.JavaUtility;
 import com.tp.sms.generic.WebDriverUtility.UtilityClassObject;
 import com.tp.sms.generic.WebDriverUtility.WebDriverUtility;
 
+/**
+ * @author mailm
+ *
+ */
+/**
+ * @author mailm
+ *
+ */
 public class BaseClass {
 	public WebDriver driver;
 	public static WebDriver sdriver;
@@ -114,15 +122,24 @@ public class BaseClass {
 	}
 
 
+	/**This method is for verifying the header text
+	 * Hard Assert
+	 * @param elmt
+	 * @param text
+	 */
 	public void verifyingHeader(WebElement elmt,String text) {
-		//Hard Assert
 		String actualText = elmt.getText();
 		boolean b = actualText.contains(text);
 		Assert.assertTrue(b);
 		Reporter.log(actualText+" verified",true);
 	}
+	
+	/**This method is for verifying the text present in text feild
+	 * soft assert
+	 * @param elmt
+	 * @param text
+	 */
 	public void verifyingTextfield(WebElement elmt,String text) {
-		//Soft Assert
 		String actualText = elmt.getText();
 		SoftAssert sa = new SoftAssert();
 		sa.assertEquals(actualText.trim(), text);

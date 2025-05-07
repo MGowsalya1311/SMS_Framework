@@ -13,7 +13,12 @@ import com.tp.sms.ObjectRepository.HomePage;
 import com.tp.sms.ObjectRepository.LoginPage;
 import com.tp.sms.ObjectRepository.SubjectPage;
 import com.tp.sms.generic.BaseClassTest.BaseClass;
-
+/**
+ * 
+ * @author gowsalya
+ * Subject  module
+ * Test script 1: create new subject
+ */
 public class SubjectTest extends BaseClass{
 	
 	@Test

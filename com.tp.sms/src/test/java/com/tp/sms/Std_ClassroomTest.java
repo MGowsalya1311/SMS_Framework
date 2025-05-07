@@ -12,9 +12,17 @@ import com.tp.sms.ObjectRepository.HomePage;
 import com.tp.sms.ObjectRepository.LoginPage;
 import com.tp.sms.generic.BaseClassTest.BaseClass;
 
+/**
+ * 
+ * @author Gowsalya
+ * Classroom module
+ * Test script :1 create new classroom
+ * Test script :2 edit class room
+ *
+ */
 
 
-//@Listeners(com.tp.sms.generic.ListenerUtility.ListenerImplementation.class)
+@Listeners(com.tp.sms.generic.ListenerUtility.ListenerImplementation.class)
 
 public class Std_ClassroomTest extends BaseClass {
 
@@ -91,14 +99,7 @@ public class Std_ClassroomTest extends BaseClass {
 		Thread.sleep(2000);
 		boolean b1 = clsPage.getConfirmation_text().getText().contains("Success");
 		Assert.assertTrue(b1);
-	
-	//	System.out.println(editClsPage.getUpdate_Btn().getText());
-	//	Thread.sleep(5000);
 		
-		//System.out.println(driver.findElement(By.xpath("//button[@id='btnSubmit1']")).getText());
-		//driver.findElement(By.xpath("//button[@id='btnSubmit1']")).click();
-		//Reporter.log(className+" classroom updated successfully",true);
-	
 		Thread.sleep(3000);
 	}
 }

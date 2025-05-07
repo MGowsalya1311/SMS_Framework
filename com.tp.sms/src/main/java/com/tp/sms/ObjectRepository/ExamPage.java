@@ -10,6 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 import com.tp.sms.generic.FileUtility.ExcelUtility;
 import com.tp.sms.generic.WebDriverUtility.JavaUtility;
 
+/**
+ * @author mailm
+ *
+ */
 public class ExamPage {
 	WebDriver driver;
 	public ExamPage(WebDriver driver) {
@@ -48,6 +52,10 @@ public class ExamPage {
 		return examSubmit_btn;
 	}
 	
+	/**This method is for creating new Exam
+	 * @throws IOException
+	 * @throws Throwable
+	 */
 	public void createExam() throws IOException, Throwable {
 		ExcelUtility eLib = new ExcelUtility();
 		JavaUtility jLib = new JavaUtility();

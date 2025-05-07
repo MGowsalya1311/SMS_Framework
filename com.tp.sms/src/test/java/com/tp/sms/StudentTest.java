@@ -14,7 +14,13 @@ import com.tp.sms.generic.FileUtility.ExcelUtility;
 import com.tp.sms.generic.FileUtility.FileUtility;
 import com.tp.sms.generic.WebDriverUtility.JavaUtility;
 import com.tp.sms.generic.WebDriverUtility.WebDriverUtility;
-
+/**
+ * 
+ * author Gowsalya
+ * Student Module : 
+ * Test script :1 Create Student
+ * 
+ */
 public class StudentTest  extends BaseClass{
 
 	public FileUtility fLib = new FileUtility();

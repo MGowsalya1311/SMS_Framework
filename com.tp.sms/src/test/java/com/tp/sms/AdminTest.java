@@ -12,7 +12,13 @@ import com.tp.sms.generic.BaseClassTest.BaseClass;
 import com.tp.sms.generic.FileUtility.FileUtility;
 import com.tp.sms.generic.ListenerUtility.ListenerImplementation;
 
-
+/**
+ * 
+ * author Gowsalya
+ * Admin Module : 
+ * Test script :1 verify Admin Profile
+ * 
+ */
 @Listeners(com.tp.sms.generic.ListenerUtility.ListenerImplementation.class)
 public class AdminTest extends BaseClass{
 

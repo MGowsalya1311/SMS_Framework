@@ -213,28 +213,13 @@ public class StudentPage {
 	}
 
 
-
-
-//	public void createStud() throws Throwable {
-//		ExcelUtility eLib = new ExcelUtility();
-//		JavaUtility jLib = new JavaUtility();
-//		FileInputStream fis = new FileInputStream("./testData/sms_testScriptData.xlsx");
-//		Workbook wb = WorkbookFactory.create(fis);
-//		Sheet s = wb.getSheet(sheetName);
-//		int count = s.getLastRowNum();
-//		for(int i=0;i<count;i++) {
-//			int cellcount = s.getRow(i).getPhysicalNumberOfCells();
-//					
-//			for(int j=0;j<cellcount;j++) {
-//
-//				String data = eLib.getDataFromExcelFile(sheetName, rowNum, j);
-//				//+jLib.getRandomNumber();
-//				System.out.println(data);
-//
-//			}
-//		}
-//			}
 	
+	/**
+	 * This method is used for creating new student
+	 * @param sheetName
+	 * @param rowNum
+	 * @throws Throwable
+	 */
 	public void createStud(String sheetName,int rowNum) throws Throwable {
 		ExcelUtility eLib = new ExcelUtility();
 		JavaUtility jLib = new JavaUtility();
@@ -262,10 +247,6 @@ public class StudentPage {
 		String gua_phone = eLib.getDataFromExcelFile(sheetName, rowNum, 14);
 		String gua_dob = eLib.getDataFromExcelFile(sheetName, rowNum, 15);
 		String gua_gender = eLib.getDataFromExcelFile(sheetName, rowNum, 16);
-
-	
-//	(String std_index_no,String std_fullname,String std_nameWithInitials,String std_address,String std_email,String std_phone,String std_dob,String std_gender,
-//			String gua_fullname,String gua_nameWithInitials,String gua_address,String gua_email,String gua_phone,String gua_dob,String gua_gender) throws Throwable {
 		getStdIndexnumber_Edt().sendKeys(std_index_no);
 		getStdFullname_Edt().sendKeys(std_fullname);
 		getStdNameWithInitials_Edt().sendKeys(std_nameWithInitials);

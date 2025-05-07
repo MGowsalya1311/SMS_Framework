@@ -11,7 +11,14 @@ import com.tp.sms.ObjectRepository.LoginPage;
 import com.tp.sms.ObjectRepository.TeacherHomePage;
 import com.tp.sms.generic.BaseClassTest.BaseClass;
 import com.tp.sms.generic.FileUtility.FileUtility;
-
+/**
+ * 
+ * @author gowsalya
+ * Teacher  module
+ * Test script 1: verifying teacher login
+ * Test script 2: view attendance
+ * 
+ */
 public class TeacherTest extends BaseClass{
 	@Test
 	public void testLogin() throws Throwable {
@@ -26,27 +33,10 @@ public class TeacherTest extends BaseClass{
 
 		HomePage hp = new HomePage(driver);
 		String actualText = hp.getUserName_Txt().getText();
-		/*System.out.println(actualText);
-		if(actualText.equalsIgnoreCase(text)) {
-			System.out.println(text+" logged in successfully");
-		}
-		else {
-			System.out.println("logged in failed");
-		}*/
 
 		Assert.assertEquals(actualText, text);
 		Reporter.log(actualText+" is verified",true);
 	}
-	//	@DataProvider
-	//	public Object[][] getTeacherCredentials() throws Throwable{
-	//		FileUtility fLib = new FileUtility();
-	//		Object[][] obj = new Object[1][2];
-	//		obj[0][0] = fLib.getDataFromPropertyFile("teacher_user");
-	//		obj[0][1] = fLib.getDataFromPropertyFile("password");
-	//
-	//		return obj;
-	//	}
-
 
 	@Test
 	public void viewAttendance() throws Throwable {

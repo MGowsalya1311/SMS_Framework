@@ -14,7 +14,13 @@ import com.tp.sms.ObjectRepository.RangeAndGradePage;
 import com.tp.sms.ObjectRepository.SubjectPage;
 import com.tp.sms.ObjectRepository.SubjectRoutingPage;
 import com.tp.sms.generic.BaseClassTest.BaseClass;
-
+/**
+ * 
+ * @author gowsalya
+ * Subject Routing module
+ * Test script 1: create new grade
+ * Test script 2: verify Grade In SubjectRouting 
+ */
 public class SubjectRoutingTest extends BaseClass {
 
 	@Test
