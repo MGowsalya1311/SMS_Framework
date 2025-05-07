@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.tp.sms.StudentTest">
         <methods>
@@ -11,6 +11,30 @@
           <include name="toClose"/>
         </methods>
       </class> <!-- com.tp.sms.StudentTest -->
+      <class name="com.tp.sms.SubjectRoutingTest">
+        <methods>
+          <include name="toLogout"/>
+          <include name="toLaunch"/>
+          <include name="toClose"/>
+          <include name="createGradeTest"/>
+        </methods>
+      </class> <!-- com.tp.sms.SubjectRoutingTest -->
+      <class name="com.tp.sms.SubjectTest">
+        <methods>
+          <include name="createSubjectTest"/>
+          <include name="toLogout"/>
+          <include name="toLaunch"/>
+          <include name="toClose"/>
+        </methods>
+      </class> <!-- com.tp.sms.SubjectTest -->
+      <class name="com.tp.sms.Std_ClassroomTest">
+        <methods>
+          <include name="toLogout"/>
+          <include name="toLaunch"/>
+          <include name="editClassroomTest"/>
+          <include name="toClose"/>
+        </methods>
+      </class> <!-- com.tp.sms.Std_ClassroomTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

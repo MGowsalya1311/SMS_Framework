@@ -1,9 +1,14 @@
 package com.tp.sms.ObjectRepository;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.tp.sms.generic.FileUtility.ExcelUtility;
+import com.tp.sms.generic.WebDriverUtility.JavaUtility;
 
 public class ExamPage {
 	WebDriver driver;
@@ -43,6 +48,13 @@ public class ExamPage {
 		return examSubmit_btn;
 	}
 	
-	
-
+	public void createExam() throws IOException, Throwable {
+		ExcelUtility eLib = new ExcelUtility();
+		JavaUtility jLib = new JavaUtility();
+		getAdd_Btn().click();
+		String examName = eLib.getDataFromExcelFile("exam", 1, 2)+jLib.getRandomNumber();
+		getExamName_Edt().sendKeys(examName);
+		getExamSubmit_btn().click();
+		
+	}
 }

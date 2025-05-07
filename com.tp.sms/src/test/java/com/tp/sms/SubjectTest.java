@@ -18,6 +18,8 @@ public class SubjectTest extends BaseClass{
 	
 	@Test
 	public void createSubjectTest() throws Throwable {
+		String text = "Success";
+		
 		LoginPage lp = new LoginPage(driver);
 		String un=fLib.getDataFromPropertyFile("admin_user");
 		String pswd =fLib.getDataFromPropertyFile("password"); 
@@ -26,16 +28,17 @@ public class SubjectTest extends BaseClass{
 		HomePage hp = new HomePage(driver);
 		hp.getSubject_link().click();
 		
-		String sub = eLib.getDataFromExcelFile("subject", 1, 2)+jLib.getRandomNumber();
+		
 		SubjectPage subPage = new SubjectPage(driver);
+		subPage.createSubject();
+		/*String sub = eLib.getDataFromExcelFile("subject", 1, 2)+jLib.getRandomNumber();
 		subPage.getSubjectName_Edt().sendKeys(sub);
 		subPage.getSubjectSubmit_Btn().click();
-		Reporter.log("Subject created successfully",true);
+		Reporter.log("Subject created successfully",true);*/
 		//verifyingText(hp.getConfMessage_text().getText());
 		
-		verifyingHeader(hp.getConfMessage_text(),"Success");
+		verifyingHeader(hp.getConfMessage_text(),text);
 
-		
 		//Thread.sleep(5000);
 		WebElement element = hp.getConfMessage_text();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));

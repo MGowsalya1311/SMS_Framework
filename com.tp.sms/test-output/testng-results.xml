@@ -11,7 +11,10 @@
       <![CDATA[Logged in successfully]]>
     </line>
     <line>
-      <![CDATA[Student created successfully]]>
+      <![CDATA[Subject created successfully]]>
+    </line>
+    <line>
+      <![CDATA[Success! Your information has been successfully inserted in our database. verified]]>
     </line>
     <line>
       <![CDATA[Logged out Successfully]]>
@@ -20,12 +23,12 @@
       <![CDATA[Browser got Closed Successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-05-06T10:26:08Z" name="Default suite" finished-at="2025-05-06T10:26:41Z" duration-ms="33239">
+  <suite started-at="2025-05-07T04:58:50Z" name="Default suite" finished-at="2025-05-07T04:59:09Z" duration-ms="19581">
     <groups>
     </groups>
-    <test started-at="2025-05-06T10:26:08Z" name="Default test" finished-at="2025-05-06T10:26:41Z" duration-ms="33239">
-      <class name="com.tp.sms.StudentTest">
-        <test-method is-config="true" signature="toLaunch(java.lang.String)[pri:0, instance:com.tp.sms.StudentTest@7a1a14a4]" started-at="2025-05-06T10:26:08Z" name="toLaunch" finished-at="2025-05-06T10:26:14Z" duration-ms="6577" status="PASS">
+    <test started-at="2025-05-07T04:58:50Z" name="Default test" finished-at="2025-05-07T04:59:09Z" duration-ms="19581">
+      <class name="com.tp.sms.SubjectTest">
+        <test-method is-config="true" signature="toLaunch(java.lang.String)[pri:0, instance:com.tp.sms.SubjectTest@7a1a14a4]" started-at="2025-05-07T04:58:50Z" name="toLaunch" finished-at="2025-05-07T04:58:55Z" duration-ms="4934" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,31 +45,34 @@
             </line>
           </reporter-output>
         </test-method> <!-- toLaunch -->
-        <test-method signature="createStudentTest()[pri:0, instance:com.tp.sms.StudentTest@7a1a14a4]" started-at="2025-05-06T10:26:14Z" name="createStudentTest" finished-at="2025-05-06T10:26:35Z" duration-ms="20833" status="PASS">
+        <test-method signature="createSubjectTest()[pri:0, instance:com.tp.sms.SubjectTest@7a1a14a4]" started-at="2025-05-07T04:58:55Z" name="createSubjectTest" finished-at="2025-05-07T04:59:02Z" duration-ms="7948" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in successfully]]>
             </line>
             <line>
-              <![CDATA[Student created successfully]]>
+              <![CDATA[Subject created successfully]]>
+            </line>
+            <line>
+              <![CDATA[Success! Your information has been successfully inserted in our database. verified]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createStudentTest -->
-        <test-method is-config="true" signature="toLogout()[pri:0, instance:com.tp.sms.StudentTest@7a1a14a4]" started-at="2025-05-06T10:26:35Z" name="toLogout" finished-at="2025-05-06T10:26:40Z" duration-ms="4500" status="PASS">
+        </test-method> <!-- createSubjectTest -->
+        <test-method is-config="true" signature="toLogout()[pri:0, instance:com.tp.sms.SubjectTest@7a1a14a4]" started-at="2025-05-07T04:59:02Z" name="toLogout" finished-at="2025-05-07T04:59:07Z" duration-ms="4807" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- toLogout -->
-        <test-method is-config="true" signature="toClose()[pri:0, instance:com.tp.sms.StudentTest@7a1a14a4]" started-at="2025-05-06T10:26:40Z" name="toClose" finished-at="2025-05-06T10:26:41Z" duration-ms="1301" status="PASS">
+        <test-method is-config="true" signature="toClose()[pri:0, instance:com.tp.sms.SubjectTest@7a1a14a4]" started-at="2025-05-07T04:59:07Z" name="toClose" finished-at="2025-05-07T04:59:09Z" duration-ms="1845" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser got Closed Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- toClose -->
-      </class> <!-- com.tp.sms.StudentTest -->
+      </class> <!-- com.tp.sms.SubjectTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

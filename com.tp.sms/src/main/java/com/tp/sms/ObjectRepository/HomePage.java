@@ -224,6 +224,11 @@ public class HomePage {
 	}
 
 
+	public void navigateToCreateExamPage() {
+		getExam_link().click();
+		getCreateExam_link().click();
+		
+	}
 
 	public void signOut() {
 		
